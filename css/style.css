@@ -1,8 +1,8 @@
-.btn-outline-secondary {
-    margin: 20px;
-    padding: 1.2em;
-    width: 150px;
+.homeb {
+    margin: 2em;
+    padding: 1em;
 }
+
 
 /* Logo */
 
@@ -52,6 +52,7 @@
         font-size: 25px;
     }
 }
+
 #footer {
     min-height: 2em;
     background-color: transparent;

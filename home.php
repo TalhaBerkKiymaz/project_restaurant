@@ -10,11 +10,11 @@
         <h6 style="padding-top: 10px; color: #000000; font-style:italic; font-size:px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; ;">
             Then make sure to make an reservation.</h6>
     </div>
-    <a href="./index.php?content=bestellen">
-        <button type="button" class="btn btn-outline-secondary">Bestellen</button>
+    <a class="homeb" href="./index.php?content=bestellen">
+        <button type="button" class="btn btn-outline-secondary btn-lg">Bestellen</button>
     </a>
-    <a href="./index.php?content=reserveren">
-        <button type="button" class="btn btn-outline-secondary">Reserveren</button>
+    <a class="homeb" href="./index.php?content=reserveren">
+        <button type="button" class="btn btn-outline-secondary btn-lg">Reserveren</button>
     </a>
 
 </div>
