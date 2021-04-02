@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Questrial&family=Slabo&family=Bitter&family=Work+Sans&family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Questrial&family=Slabo&family=Bitter&family=Satisfy&family=Work+Sans&family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -46,7 +46,7 @@
         </div>
       </div>
     </section>
-    <section class="container-fluid fixed-bottom">
+    <section class="container-fluid bottom">
       <div class="row">
         <div class="col-12 px-0">
           <?php include("./footer.php"); ?>
