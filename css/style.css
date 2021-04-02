@@ -3,32 +3,11 @@
     padding: 1.2em;
     width: 150px;
 }
-#mainNav nav div .navbar-nav .nav-reg {
-    color: #8E9DCC;
-}
 
-img::-moz-selection {
-    background: transparent;
-}
-
-img::selection {
-    background: transparent;
-}
-
-img::-moz-selection {
-    background: transparent;
-}
-
-#mainNav {
-    width: auto;
-    height: auto;
-    /* background: linear-gradient(to right, transparent -5%, rgb(110, 110, 110), rgb(110, 110, 110), rgb(59, 59, 59) 14%, transparent 65%, rgb(110, 110, 110), rgb(110, 110, 110)); */
-    background-color: #293033;
-}
+/* Logo */
 
 #mainNav .navbar-brand {
-    color: whitesmoke;
-    font-family: 'Work Sans', sans-serif;
+    padding-left: 5em;
 }
 
 #mainNav .navbar-brand.active,
@@ -43,8 +22,8 @@ img::-moz-selection {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    color: whitesmoke;
-    font-family: 'Work Sans', sans-serif;
+    color: #333;
+    font-family: 'Cinzel', serif;
 }
 
 .navbar.transparent.navbar-inverse .navbar-inner {
@@ -56,19 +35,21 @@ img::-moz-selection {
     color: #fed136;
 }
 
+.navbar-log {
+    margin-right: 10em;
+}
+
 @media (min-width: 992px) {
     #mainNav {
-        transition: padding-top 0.3s, padding-bottom 0.3s;
         border: none;
-        background-color: #293033;
+        background-color: white;
     }
     #mainNav .navbar-brand {
         font-size: 2em;
-        transition: all 0.3s;
     }
     #mainNav .navbar-nav .nav-item .nav-link {
-        padding: 1.1em 1em !important;
-        font-size: 90%;
+        padding: 1em 5em !important;
+        font-size: 25px;
     }
 }
 #footer {
