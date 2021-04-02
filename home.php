@@ -7,14 +7,16 @@
         And we know you've missed us too.</h5>
     <div class="card-body">
         <p> Can’t wait to dine al fresco on one of our sunny terraces? <br> Sip a rosé and enjoy our most-loved Egg Florentine, Caesar Salad, Steak Frites or Pizza Tuna?</p>
-        <h6 style="padding-top: 10px; color: #000000; font-style:italic; font-size:px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; ;">
+        <h6 style="padding-top: 10px; color: #000000; font-style:italic; font-size:px; font-family: 'Satisfy', cursive;">
             Then make sure to make an reservation.</h6>
     </div>
     <a href="./index.php?content=bestellen">
-        <button type="button" class="btn btn-outline-secondary">Bestellen</button>
+        <button type="button" class="btn btn-outline-secondary homeb">Bestellen</button>
     </a>
     <a href="./index.php?content=reserveren">
-        <button type="button" class="btn btn-outline-secondary">Reserveren</button>
+        <button type="button" class="btn btn-outline-secondary homeb">Reserveren</button>
     </a>
-
+<br>
+<br>
+<br>
 </div>
