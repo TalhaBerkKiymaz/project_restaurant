@@ -52,7 +52,12 @@ $active = (isset($_GET["content"])) ? $_GET["content"] : "";
           echo '<li class="nav-item ';
           echo (in_array($active, ["home", ""])) ? "active" : "";
           echo '">
-                  <a class="nav-link" href="./index.php?content=home">home<span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="./index.php?content=menu">menu<span class="sr-only">(current)</span></a>
+                </li>';
+          echo '<li class="nav-item ';
+          echo (in_array($active, ["home", ""])) ? "active" : "";
+          echo '">
+                  <a class="nav-link" href="./index.php?content=Contact">Contact<span class="sr-only">(current)</span></a>
                 </li>';
         }
         ?>
@@ -134,25 +139,25 @@ $active = (isset($_GET["content"])) ? $_GET["content"] : "";
                   uitloggen</a>
                 </li>';
         } else {
-          echo '<li class="nav-item ';
-          echo ($active == "register") ? "active" : "";
-          echo '">
-                  <a class="nav-link" href="./index.php?content=register">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-person-fill" viewBox="0 0 16 16">
-                  <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11z"/>
-                  </svg>
-                  registreer</a>
-                </li>
-                <li class="nav-item ';
-          echo ($active == "login") ? "active" : "";
-          echo '">
-                  <a class="nav-link" href="./index.php?content=login">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
-                  <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
-                  </svg>
-                  inloggen</a>
-                </li>';
+          // echo '<li class="nav-item ';
+          // echo ($active == "register") ? "active" : "";
+          // echo '">
+          //         <a class="nav-link" href="./index.php?content=register">
+          //         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-person-fill" viewBox="0 0 16 16">
+          //         <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11z"/>
+          //         </svg>
+          //         registreer</a>
+          //       </li>
+          //       <li class="nav-item ';
+          // echo ($active == "login") ? "active" : "";
+          // echo '">
+          //         <a class="nav-link" href="./index.php?content=login">
+          //         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+          //         <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+          //         <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+          //         </svg>
+          //         inloggen</a>
+          //       </li>';
         }
         ?>
       </ul>
