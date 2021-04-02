@@ -1,3 +1,3 @@
 <div id="footer">
-   GeorgeHollywood&copy; 2021
+The proverbial French-brasserie-in-New-York… In Amsterdam.&copy; 2021
 </div>
