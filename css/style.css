@@ -1,8 +1,3 @@
-.homeb {
-    margin: 2em;
-    padding: 1em;
-}
-
 #mainNav .navbar-brand.active,
 #mainNav .navbar-brand:active,
 #mainNav .navbar-brand:focus,
@@ -46,6 +41,28 @@
     }
 }
 
+
+/* Home */
+
+.homeb {
+    margin: 2em;
+    padding: 1em;
+}
+
+.headline-1 {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+}
+
+.hero-content {
+    /* background-image: url(/img/Restaurant.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* footer */
+
 #footer {
     min-height: 2em;
     background-color: transparent;
@@ -54,9 +71,4 @@
     font-weight: bolder;
     font-style: italic;
     font-family: 'Satisfy', cursive;
-}
-
-.headline-1 {
-    font-family: 'Raleway', sans-serif;
-    text-transform: uppercase;
 }
