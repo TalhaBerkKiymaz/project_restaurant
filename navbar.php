@@ -3,8 +3,7 @@ $active = (isset($_GET["content"])) ? $_GET["content"] : "";
 ?>
 <div id="mainNav">
   <nav class="navbar navbar-expand-md navbar-inner">
-    <a class="navbar-brand" href="./index.php?content=home">
-      <img src="./img/Logo.PNG" alt="Logo" width="207" height="167"></a>
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -51,17 +50,25 @@ $active = (isset($_GET["content"])) ? $_GET["content"] : "";
           }
         } else {
           echo '<li class="nav-item ';
-          echo (in_array($active, ["home", ""])) ? "active" : "";
+          echo (in_array($active, ["menu", ""])) ? "active" : "";
           echo '">
                   <a class="nav-link" href="./index.php?content=menu">menu<span class="sr-only">(current)</span></a>
                 </li>';
           echo '<li class="nav-item ';
           echo (in_array($active, ["home", ""])) ? "active" : "";
           echo '">
+                  <a class="nav-link" href="./index.php?content=home"><img src="./img/Logo.png" alt="Logo"></a>
+                </li>';
+
+          echo '<li class="nav-item ';
+          echo (in_array($active, ["contact", ""])) ? "active" : "";
+          echo '">
                   <a class="nav-link" href="./index.php?content=contact">Contact<span class="sr-only">(current)</span></a>
                 </li>';
+               
         }
         ?>
+        <hr>
         <!-- <li class="nav-item <?php echo ($active == "juices") ? "active" : "" ?>">
           <a class="nav-link" href="./index.php?content=juices">juices</a>
         </li>
@@ -163,7 +170,7 @@ $active = (isset($_GET["content"])) ? $_GET["content"] : "";
       ?>
       <!-- </ul> -->
     </div>
-    
+
   </nav>
   <hr>
 </div>

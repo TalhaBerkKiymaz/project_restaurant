@@ -3,13 +3,6 @@
     padding: 1em;
 }
 
-
-/* Logo */
-
-#mainNav .navbar-brand {
-    padding-left: 5em;
-}
-
 #mainNav .navbar-brand.active,
 #mainNav .navbar-brand:active,
 #mainNav .navbar-brand:focus,
@@ -36,7 +29,7 @@
 }
 
 .navbar-log {
-    margin-right: 10em;
+    align-items: center;
 }
 
 @media (min-width: 992px) {
@@ -48,7 +41,7 @@
         font-size: 2em;
     }
     #mainNav .navbar-nav .nav-item .nav-link {
-        padding: 1em 5em !important;
+        padding: 0.125em 9.5em !important;
         font-size: 25px;
     }
 }
@@ -64,5 +57,6 @@
 }
 
 .headline-1 {
-    font-family: 'Raleway', sans-serif;    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
 }
