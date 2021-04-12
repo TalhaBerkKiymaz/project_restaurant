@@ -1,6 +1,6 @@
 <?php
-    $file = 'test.pdf';
-    $filename = 'test.pdf';
+    $file = 'menu.pdf';
+    $filename = 'menu.pdf';
     header('Content-type: application/pdf');
     header('Content-Disposition: inline; filename="' . $filename . '"');
     header('Content-Transfer-Encoding: binary');
