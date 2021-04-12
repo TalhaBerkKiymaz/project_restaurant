@@ -52,7 +52,7 @@ $active = (isset($_GET["content"])) ? $_GET["content"] : "";
           echo '<li class="nav-item ';
           echo (in_array($active, ["menu", ""])) ? "active" : "";
           echo '">
-                  <a class="nav-link" href="./index.php?content=menu">menu<span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="http://www.georgehollywood.com/menu">menu<span class="sr-only">(current)</span></a>
                 </li>';
           echo '<li class="nav-item ';
           echo (in_array($active, ["home", ""])) ? "active" : "";
