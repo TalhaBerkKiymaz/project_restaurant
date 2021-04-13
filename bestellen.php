@@ -1,7 +1,8 @@
-<div class="banner-menu">
-    <img src="./img/banner1.jpg" width="1900" height="380" alt="Menu Banner">
+
+<div class="banner-menu container">
+    <img src="./img/banner1.jpg"  alt="Menu Banner">
 </div>
-<div class="container-fluid">
+
     <div class="main-menu row align-items-start">
         <div class="col-12">
             <h3 class="main-menu-h3">Menu
