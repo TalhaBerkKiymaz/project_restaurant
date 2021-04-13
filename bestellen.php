@@ -68,51 +68,51 @@
             <!-- php ile databaseden cekerken buraya listeyi echola. -->
             <div class="menu-cat" id="cat1">
                 <h3 id="category"> Sushi </h3>
+                <hr>
                 <ul class="menu-cat-group">
                     <li class="menu-cat-li">
                         <a class="menu-cat-item" href="">
                             <b class="item-name"> Salmon flame Roll</b> <br>
-                            <span class="item-desciption">with flame torched salmon & wasabi sesame</span>
+                            <span class="item-description">with flame torched salmon & wasabi sesame</span>
                         </a>
                     </li>
                     <li class="menu-cat-li">
                         <a class="menu-cat-item" href="">
-                            <b class="item-name"> Salmon flame Roll</b> <br>
-                            <span class="item-desciption">with flame torched salmon & wasabi sesame</span>
+                            <b class="item-name"> Crispy asparagus roll</b> <br>
                         </a>
                     </li>
                     <li class="menu-cat-li">
                         <a class="menu-cat-item" href="">
-                            <b class="item-name"> Salmon flame Roll</b> <br>
-                            <span class="item-desciption">with flame torched salmon & wasabi sesame</span>
+                            <b class="item-name"> Rainbow Roll</b> <br>
+
                         </a>
                     </li>
+                </ul>
+            </div>
+            <div class="menu-cat" id="cat2">
+                <h3 id="category"> Eggs & Sandwiches </h3>
+                <hr>
+                <ul class="menu-cat-group">
                     <li class="menu-cat-li">
                         <a class="menu-cat-item" href="">
-                            <b class="item-name"> Salmon flame Roll</b> <br>
-                            <span class="item-desciption">with flame torched salmon & wasabi sesame</span>
+                            <b class="item-name"> Avocado Toast</b> <br>
+                            <span class="item-description">/w crispy bacon , poached
+                                eggs , fresh herbs & mayonnaise</span>
                         </a>
                     </li>
                 </ul>
             </div>
             <div class="menu-cat" id="cat1">
-                <h3 id="category"> Sushi </h3>
+                <h3 id="category"> Marina Plateau </h3>
+                <hr>
                 <ul class="menu-cat-group">
                     <li class="menu-cat-li">
                         <a class="menu-cat-item" href="">
-                            <b class="item-name"> Salmon flame Roll</b> <br>
-                            <span class="item-desciption">with flame torched salmon & wasabi sesame</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="menu-cat" id="cat1">
-                <h3 id="category"> Sushi </h3>
-                <ul class="menu-cat-group">
-                    <li class="menu-cat-li">
-                        <a class="menu-cat-item" href="">
-                            <b class="item-name"> Salmon flame Roll</b> <br>
-                            <span class="item-desciption">with flame torched salmon & wasabi sesame</span>
+                            <b class="item-name"> Plateau Royale</b> <br>
+                            <span class="item-description">16pcs of sushi & 16pcs of sashimi , selection of 8 oyster,
+                                Dutch shrimp & Nordic pink shrimps , 1/4 cooked
+                                lobster & fresh red crab salad
+                            </span>
                         </a>
                     </li>
                 </ul>
@@ -161,7 +161,7 @@
             </div>
             <hr>
             <div class="basket-afrekenen">
-            <a class="btn btn-dark" href="#" role="button">ORDER</a>
+                <a class="btn btn-dark" href="#" role="button">ORDER</a>
             </div>
         </div>
     </div>
