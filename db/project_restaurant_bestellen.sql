@@ -53,11 +53,16 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `project_restaurant`;
-INSERT INTO `project_restaurant`.`Catalogus` (`id`, `naam`, `omschrijving`) VALUES (1, 'borekci', 'borekciom');
-INSERT INTO `project_restaurant`.`Catalogus` (`id`, `naam`, `omschrijving`) VALUES (2, 'tatlici', 'tatliciiom');
-INSERT INTO `project_restaurant`.`Catalogus` (`id`, `naam`, `omschrijving`) VALUES (3, 'orospu', 'orospuom');
-INSERT INTO `project_restaurant`.`Catalogus` (`id`, `naam`, `omschrijving`) VALUES (4, 'asd', 'asd');
-INSERT INTO `project_restaurant`.`Catalogus` (`id`, `naam`, `omschrijving`) VALUES (5, 'dsa', 'dsa');
+INSERT INTO `project_restaurant`.`Catalogus` (`id`, `naam`, `omschrijving`) VALUES (1, 'Sushi', '(8pcs)');
+INSERT INTO `project_restaurant`.`Catalogus` (`id`, `naam`, `omschrijving`) VALUES (2, 'Sashimi', 'served w/ ginger & wasabi');
+INSERT INTO `project_restaurant`.`Catalogus` (`id`, `naam`, `omschrijving`) VALUES (3, 'Eggs & Sandwiches', 'served till 16');
+INSERT INTO `project_restaurant`.`Catalogus` (`id`, `naam`, `omschrijving`) VALUES (4, 'Marina Plateaus', 'selection of seafood, sushi & oysters to share served w/ ponzu/red wine vinaigrette & mayonnaise');
+INSERT INTO `project_restaurant`.`Catalogus` (`id`, `naam`, `omschrijving`) VALUES (5, 'Kids', ' ');
+INSERT INTO `project_restaurant`.`Catalogus` (`id`, `naam`, `omschrijving`) VALUES (6, 'Salads', ' ');
+INSERT INTO `project_restaurant`.`Catalogus` (`id`, `naam`, `omschrijving`) VALUES (7, 'White Wine', '(Glass / Bottle)');
+INSERT INTO `project_restaurant`.`Catalogus` (`id`, `naam`, `omschrijving`) VALUES (8, 'Red Wine', '(Glass / Bottle)');
+INSERT INTO `project_restaurant`.`Catalogus` (`id`, `naam`, `omschrijving`) VALUES (9, 'Rose Wine', '(Glass / Bottle)');
+INSERT INTO `project_restaurant`.`Catalogus` (`id`, `naam`, `omschrijving`) VALUES (10, 'Sparkling Wines', '(Glass / Bottle)');
 
 
 COMMIT;
@@ -68,12 +73,17 @@ COMMIT;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `project_restaurant`;
-INSERT INTO `project_restaurant`.`Product` (`id`, `naam`, `omschrijving`, `prijs`, `catalogus`) VALUES (1, 'tarigin borekleri', 'amcik tarik', 31, 1);
-INSERT INTO `project_restaurant`.`Product` (`id`, `naam`, `omschrijving`, `prijs`, `catalogus`) VALUES (2, 'salak cuneytin amcik yanaklari', 'sikik cuneyt', 17, 2);
-INSERT INTO `project_restaurant`.`Product` (`id`, `naam`, `omschrijving`, `prijs`, `catalogus`) VALUES (3, 'talha the sisko', 'sisko borekci', 14, 3);
+INSERT INTO `project_restaurant`.`Product` (`id`, `naam`, `omschrijving`, `prijs`, `catalogus`) VALUES (1, 'Crispy asparagus roll', 'w/ tempura, cucumber & avocado', 16, 1);
+INSERT INTO `project_restaurant`.`Product` (`id`, `naam`, `omschrijving`, `prijs`, `catalogus`) VALUES (2, 'Salmon tune roll', 'w/ flame torched salmon & wasabi sesame', 18, 1);
+INSERT INTO `project_restaurant`.`Product` (`id`, `naam`, `omschrijving`, `prijs`, `catalogus`) VALUES (3, 'Rainbow roll', 'w/ avocado, salmon & bass topped with colored tobiko', 19, 1);
+INSERT INTO `project_restaurant`.`Product` (`id`, `naam`, `omschrijving`, `prijs`, `catalogus`) VALUES (4, 'Sashimi', 'salmon/tuna or bass (6pcs)', 13/17/19, 2);
+INSERT INTO `project_restaurant`.`Product` (`id`, `naam`, `omschrijving`, `prijs`, `catalogus`) VALUES (5, 'Sashimi selection', 'w/ salmon, tuna & bass (9pcs)', 20, 2);
+INSERT INTO `project_restaurant`.`Product` (`id`, `naam`, `omschrijving`, `prijs`, `catalogus`) VALUES (6, 'XL Sashimi selection', 'salmon, tuna, bass, w/ ginger & wasabi (18 pcs)', 39, 2);
+INSERT INTO `project_restaurant`.`Product` (`id`, `naam`, `omschrijving`, `prijs`, `catalogus`) VALUES (7, 'Avocado toast', 'w/ crispy bacon, poached eggs, fresh herbs & mayonnaise', 12, 3);
+INSERT INTO `project_restaurant`.`Product` (`id`, `naam`, `omschrijving`, `prijs`, `catalogus`) VALUES (8, 'Steak Sandwich', 'w/ crispy salad, spicy mayonnaise & red onion pickles', 14, 3);
+INSERT INTO `project_restaurant`.`Product` (`id`, `naam`, `omschrijving`, `prijs`, `catalogus`) VALUES (9, 'Eggs Benedict', 'w/Hollandaise sauce/brioche bun & farmhouse ham', 14, 3);
 
 COMMIT;
-select product.id, product.naam, product.omschrijving, product.catalogus from catalogus inner join product on product.catalogus=catalogus.id;
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
