@@ -36,8 +36,8 @@
         font-size: 2em;
     }
     #mainNav .navbar-nav .nav-item .nav-link {
-        padding: 0.125em 9.5em !important;
-        font-size: 25px;
+        padding: 0.225em 8.85em !important;
+        font-size: 27px;
     }
 }
 
@@ -45,8 +45,11 @@
 /* Home */
 
 .homeb {
-    margin: 2em;
-    padding: 1em;
+    padding: 1em 1em;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 550;
 }
 
 .headline-1 {
@@ -54,10 +57,13 @@
     text-transform: uppercase;
 }
 
-.hero-content {
-    /* background-image: url(/img/Restaurant.jpg); */
-    background-repeat: no-repeat;
-    background-size: cover;
+.home-img {
+    box-sizing: border-box;
+    box-shadow: 8px 8px 50px #000;
+    border: 2px solid black;
+    border-radius: 1em;
+    box-sizing: border-box;
+    box-shadow: 8px 8px 50px #000;
 }
 
 
