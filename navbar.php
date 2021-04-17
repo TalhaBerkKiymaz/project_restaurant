@@ -172,5 +172,5 @@ $active = (isset($_GET["content"])) ? $_GET["content"] : "";
     </div>
 
   </nav>
-  <hr>
+
 </div>
