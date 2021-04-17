@@ -13,7 +13,7 @@
 <div class="contact" style="text-align: center;">
     <h5 style="padding-top: 10px; color: #000000; font-style:italic; font-size: 50px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; ;">
         Contact</h5>
-    <img class="img" src="./img/Duivendrechtsekade.jpg" style="padding: 1em 3em;" width="400" height="400" alt="">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2437.8238046797937!2d4.933875915962816!3d52.33734245750197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c60bdc0973e95b%3A0xc82ad62cab0c8354!2sDuivendrechtsekade%2085%2C%201096%20AJ%20Amsterdam!5e0!3m2!1str!2snl!4v1618700559607!5m2!1str!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 </div>
 
 <div class="text-block" style="text-align: center;">
