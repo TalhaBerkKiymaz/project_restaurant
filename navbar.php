@@ -57,7 +57,7 @@ $active = (isset($_GET["content"])) ? $_GET["content"] : "";
           echo '<li class="nav-item ';
           echo (in_array($active, ["home", ""])) ? "active" : "";
           echo '">
-                  <a class="nav-link" href="./index.php?content=home"><img src="./img/Logo.png" alt="Logo"></a>
+                  <a class="nav-link nav-logo" href="./index.php?content=home"><img src="./img/Logo.png" alt="Logo"></a>
                 </li>';
 
           echo '<li class="nav-item ';
