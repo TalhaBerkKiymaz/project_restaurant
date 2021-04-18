@@ -10,20 +10,18 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,N
 -- -----------------------------------------------------
 -- Schema Normaliseren_opdracht
 -- -----------------------------------------------------
-DROP SCHEMA IF EXISTS `Normaliseren_opdracht` ;
 
 -- -----------------------------------------------------
 -- Schema Normaliseren_opdracht
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `Normaliseren_opdracht` DEFAULT CHARACTER SET utf8 ;
-USE `Normaliseren_opdracht` ;
+USE `project_restaurant` ;
 
 -- -----------------------------------------------------
 -- Table `Normaliseren_opdracht`.`Klant`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `Normaliseren_opdracht`.`Klant` ;
+DROP TABLE IF EXISTS `project_restaurant`.`Klant` ;
 
-CREATE TABLE IF NOT EXISTS `Normaliseren_opdracht`.`Klant` (
+CREATE TABLE IF NOT EXISTS `project_restaurant`.`Klant` (
   `klantid` INT NOT NULL AUTO_INCREMENT,
   `naam` VARCHAR(45) NOT NULL,
   `achternaam` VARCHAR(45) NOT NULL,
@@ -38,9 +36,9 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `Normaliseren_opdracht`.`Bestelling`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `Normaliseren_opdracht`.`Bestelling` ;
+DROP TABLE IF EXISTS `project_restaurant`.`Bestelling` ;
 
-CREATE TABLE IF NOT EXISTS `Normaliseren_opdracht`.`Bestelling` (
+CREATE TABLE IF NOT EXISTS `project_restaurant`.`Bestelling` (
   `bestelid` INT NOT NULL AUTO_INCREMENT,
   `klantid` INT NOT NULL,
   `totaal` INT NOT NULL,
@@ -48,7 +46,7 @@ CREATE TABLE IF NOT EXISTS `Normaliseren_opdracht`.`Bestelling` (
   INDEX `fk_bestelling_klantid_idx` (`klantid` ASC),
   CONSTRAINT `fk_bestelling_klantid`
     FOREIGN KEY (`klantid`)
-    REFERENCES `Normaliseren_opdracht`.`Klant` (`klantid`)
+    REFERENCES `project_restaurant`.`Klant` (`klantid`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
@@ -57,16 +55,16 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `Normaliseren_opdracht`.`Bestelregel`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `Normaliseren_opdracht`.`Bestelregel` ;
+DROP TABLE IF EXISTS `project_restaurant`.`Bestelregel` ;
 
-CREATE TABLE IF NOT EXISTS `Normaliseren_opdracht`.`Bestelregel` (
+CREATE TABLE IF NOT EXISTS `project_restaurant`.`Bestelregel` (
   `bestelid` INT NOT NULL,
   `productid` INT NOT NULL,
   `aantal` INT NOT NULL,
   PRIMARY KEY (`bestelid`, `productid`),
   CONSTRAINT `fk_Bestelregel_bestelid`
     FOREIGN KEY (`bestelid`)
-    REFERENCES `Normaliseren_opdracht`.`Bestelling` (`bestelid`)
+    REFERENCES `project_restaurant`.`Bestelling` (`bestelid`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
