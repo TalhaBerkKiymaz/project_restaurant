@@ -228,3 +228,9 @@
     font-size: 16px;
     font-family: 'Raleway', sans-serif;
 }
+
+/* Bestelform */
+
+.bestel-form {
+    padding: 1em 1.5em;
+}
