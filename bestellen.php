@@ -26,7 +26,7 @@ if (mysqli_num_rows($result) > 0) {
                 <form action='./index.php?content=bestellen&action=add&id={$row['id']}' class='menu-cat-item' method='post'>
                 <div class='item-price'>
                     <span>€ {$row['prijs']} |</span>
-                    <span> pcs <input type='number' id='quantity' name='quantity' min='1' max='5'> </span>
+                    <span> pcs <input type='number' id='quantity' name='quantity' required min='1' max='5'> </span>
                 </div>    
                 <b class='item-name'>{$row['naam']} </b> <br>
                 <span class='item-description'> {$row['omschrijving']} </span> <br>
@@ -77,7 +77,7 @@ if (isset($_GET["catid"])) {
                         <form action='./index.php?content=bestellen&action=add&id={$pid}' class='menu-cat-item' method='post'>
                         <div class='item-price'>
                             <span>€ {$pprice} |</span>
-                            <span> pcs <input type='number' id='quantity' name='quantity' min='1' max='5'> </span>
+                            <span> pcs <input type='number' id='quantity' name='quantity' required min='1' max='5'> </span>
                         </div>    
                         <b class='item-name'> {$pnaam} </b> <br>
                         <span class='item-description'> {$pdesc} </span> <br>
@@ -115,7 +115,7 @@ if (isset($_POST["add_to_cart"])) {
             $_SESSION["shopping_cart"][$count] = $item_array;
         } else {
             echo '<script>alert("Item Already Added")</script>';
-            echo '<script>window.location="?content=bestellen"';
+            echo '<script>window.location="?content=bestellen"</script>';
         }
     } else {
         $item_array = array(
@@ -233,6 +233,7 @@ if (isset($_GET["action"])) {
         <?php
         if (!empty($_SESSION["shopping_cart"])) {
             $total = 0;
+            $full_name = "";
             foreach ($_SESSION["shopping_cart"] as $keys => $values) {
                 ?>
                 <div class="cart-row">
@@ -254,7 +255,7 @@ if (isset($_GET["action"])) {
             }
             
             ?>
-            <form action="./index.php?content=create_bestellen" method="post">
+            <form action="./index.php?content=info_bestellen" method="post">
             <div id="sum">
                 <!-- bezorgkosten -->
                 <div class="cart-row">
@@ -265,6 +266,8 @@ if (isset($_GET["action"])) {
                 <div class="cart-row">
                     <span class="cart-sum-name">Totaal</span>
                     <span class="cart-sum-price">€ <?php echo number_format($total, 2); ?></span>
+                <input type="hidden" name="hidden_product" value="<?php echo $values["item_name"] ?>">
+                <input type="hidden" name="hidden_quantity" value="<?php echo $values["item_quantity"] ?>">
                 <input type="hidden" name="hidden_price" value="<?php echo number_format($total, 2); ?>">
                 </div>
                 <div class="basket-afrekenen">

@@ -229,8 +229,15 @@
     font-family: 'Raleway', sans-serif;
 }
 
+
 /* Bestelform */
 
 .bestel-form {
     padding: 1em 1.5em;
+}
+
+.bestel-but {
+    height: 200px;
+    padding-top: 1.25em;
+    font-size: 32px;
 }
