@@ -5,10 +5,7 @@ include("./connect_db.php");
 
 
 // Gives all the product //
-$sql = "SELECT  p.id, p.naam, p.omschrijving, p.prijs, c.id as catid, c.naam as catname, c.omschrijving as catdesc 
-        FROM product as p INNER JOIN catalogus as c 
-        ON p.catalogus=c.id 
-        ORDER BY catid ASC
+$query = "SELECT `reservering_email` FROM `reservering` Where `datum` = 
 
  ";
 // echo $sql;
