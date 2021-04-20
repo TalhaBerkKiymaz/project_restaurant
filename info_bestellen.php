@@ -122,9 +122,7 @@ if (empty($product) || empty($quantity) || empty($total)) {
                         <option value="">AmericanExpress</option>
                         
                         </select>
-                            <button class="dropbtn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                Payment methode
-                            </button>
+                       
                             
                             
                             
@@ -134,7 +132,7 @@ if (empty($product) || empty($quantity) || empty($total)) {
                 </div>
                 <div class="col-6">
                     <div class="basket-title">
-                        <h3>Order history</h3>
+                        <h3>Order Summary</h3>
                     </div>
                     <table class="table table-hover" id="table-assigment">
                         <thead>

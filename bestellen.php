@@ -32,7 +32,7 @@ if (mysqli_num_rows($result) > 0) {
                 <input type='hidden' name='hidden_name' value='{$row['naam']}'>
                 <input type='hidden' name='hidden_price' value='{$row['prijs']}'>
                 <button class='add-to-basket' type='submit' name='add_to_cart' id='submitButton'>
-                <span class='glyphicon glyphicon-plus'></span>
+                Voeg toe
                 </button>
                 <br><hr>
                 </form>
@@ -83,7 +83,7 @@ if (isset($_GET["catid"])) {
                         <input type='hidden' name='hidden_name' value='{$pnaam}'>
                         <input type='hidden' name='hidden_price' value='{$pprice}'>
                         <button class='add-to-basket' type='submit' name='add_to_cart' id='submitButton'>
-                        <span class='glyphicon glyphicon-plus'></span>
+                        Voeg toe
                         </button>
                         <br><hr>
                         </form>
