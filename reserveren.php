@@ -10,7 +10,7 @@
                 <div class="reserveercolomn">
                     <label for="">Uw keuze: </label>
                     <div class="reserveerinput">
-                        <select name="keuze" class="form-select form-control" aria-label="Default select example">
+                        <select name="keuze" class="form-select form-control" aria-label="Default select example"  min="0" max="10" required>
 
                             <option value="Lunch">Lunch</option>
                             <option value="Diner">Diner</option>
@@ -24,7 +24,7 @@
                     <label for="">Aantal Personen:</label>
                     <div class="reserveerinput">
                         <div class="form-group">
-                            <input type="number" name="personen" class="form-control" id="exampleInputPassword1" placeholder="Personen">
+                            <input type="number" name="personen" class="form-control" id="exampleInputPassword1" placeholder="Personen" required>
                         </div>
                     </div>
                 </div>
@@ -33,7 +33,7 @@
                     <label for="">Datum</label>
                     <div class="reserveerinput">
                         <div class="form-group">
-                            <input type="date" name="datum" class="form-control" id="exampleInputPassword1" placeholder="Datu">
+                            <input type="date" name="datum" class="form-control" id="exampleInputPassword1" placeholder="Datu" required>
                         </div>
                     </div>
                 </div>
