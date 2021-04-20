@@ -115,21 +115,24 @@ if (empty($product) || empty($quantity) || empty($total)) {
 
                     <div class="bestel-form">
                         <div class="dropdown">
-                        <select>
-                            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                Payment methode
-                            </button>
+                        <select name="" id="">
                         <option value="">Contant</option>
                         <option value="">IDEAL</option>
-                        <option value="">MasterCard</option>
+                        <option value="">Mastercard</option>
                         <option value="">AmericanExpress</option>
+                        
                         </select>
+                       
+                            
+                            
+                            
+                            
                         </div>
                     </div>
                 </div>
                 <div class="col-6">
                     <div class="basket-title">
-                        <h3>Order history</h3>
+                        <h3>Order Summary</h3>
                     </div>
                     <table class="table table-hover" id="table-assigment">
                         <thead>

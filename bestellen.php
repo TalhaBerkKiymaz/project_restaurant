@@ -5,8 +5,10 @@ include("./connect_db.php");
 
 
 // Gives all the product //
-$query = "SELECT `reservering_email` FROM `reservering` Where `datum` = 
-
+$sql = "SELECT  p.id, p.naam, p.omschrijving, p.prijs, c.id as catid, c.naam as catname, c.omschrijving as catdesc 
+        FROM product as p INNER JOIN catalogus as c 
+        ON p.catalogus=c.id 
+        ORDER BY catid ASC
  ";
 // echo $sql;
 
@@ -30,7 +32,7 @@ if (mysqli_num_rows($result) > 0) {
                 <input type='hidden' name='hidden_name' value='{$row['naam']}'>
                 <input type='hidden' name='hidden_price' value='{$row['prijs']}'>
                 <button class='add-to-basket' type='submit' name='add_to_cart' id='submitButton'>
-                <span class='glyphicon glyphicon-plus'></span>
+                Voeg toe
                 </button>
                 <br><hr>
                 </form>
@@ -81,7 +83,7 @@ if (isset($_GET["catid"])) {
                         <input type='hidden' name='hidden_name' value='{$pnaam}'>
                         <input type='hidden' name='hidden_price' value='{$pprice}'>
                         <button class='add-to-basket' type='submit' name='add_to_cart' id='submitButton'>
-                        <span class='glyphicon glyphicon-plus'></span>
+                        Voeg toe
                         </button>
                         <br><hr>
                         </form>

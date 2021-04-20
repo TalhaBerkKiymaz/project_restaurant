@@ -1,6 +1,11 @@
 <?php
-if (isset($_POST["personen"]) || ($_POST["datum"])) {
-    $keuze = $_POST["keuze"];
+if (!empty($_POST['personen']) && (!empty($_POST['datum']))) {
+    $keuze = $_POST['personen'];
+    $datum = $_POST['datum'];
+    $keuze = $_POST['keuze'];
+        print $keuze;
+        print $datum;
+        print $keuze;
 }
 else {
     print_r("error");
