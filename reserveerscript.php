@@ -6,6 +6,7 @@ if (!empty($_POST['personen']) && (!empty($_POST['datum']))) {
         print $keuze;
         print $datum;
         print $keuze;
+        return
 }
 else {
     print_r("error");
