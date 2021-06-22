@@ -24,7 +24,7 @@
                     <label for="">Aantal Personen:</label>
                     <div class="reserveerinput">
                         <div class="form-group">
-                            <input type="number" name="personen" class="form-control" id="exampleInputPassword1" placeholder="Personen" required>
+                            <input type="number" name="personen" class="form-control" id="exampleInputPassword1" placeholder="Personen" max="10" required>
                         </div>
                     </div>
                 </div>

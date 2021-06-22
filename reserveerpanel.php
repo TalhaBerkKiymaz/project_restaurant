@@ -1,22 +1,39 @@
+<input type="date">
 <table class="table">
-    <thead>
+<thead>
         <tr>
-            <th scope="col">Datum/Tijd</th>
+            <th scope="col"> Datum/Tijd</th>
             <th scope="col">Aantal gasten</th>
             <th scope="col">Email</th>
             <th scope="col"></th>
         </tr>
     </thead>
-    <input type="date">
+<?php include("./connect_db.php");
+        $query = 'SELECT * FROM reservering';
+        $result = mysqli_query($conn, $query);
+
+        if ($result) {
+            if (mysqli_num_rows($result)) {
+                while ($row = mysqli_fetch_assoc($result)) {
+?>
+
+  
+
   </div>
 
     <tbody>
         <tr>
-            <th scope="row">22/6/2021 15:00</th>
-            <td>3</td>
-            <td>vince@test.nl</td>
+            <th scope="row"><?php echo $row['datum'] ?></th>
+            <td><?php echo $row['personen'] ?></td>
+            <td><?php echo $row['reservering_email'] ?></td>
             <td><button type="button" class="btn btn-primary">Annuleren</button></td>
             
         </tr>
     </tbody>
+
+<?php
+                } 
+            }
+        }
+?>
 </table>
