@@ -9,6 +9,9 @@
         <p style="font-size:16px;"> On sunny days we have valet parking for a fee of €10 during lunch and €15 during dinner </p>
     </div>
 </div>
+<div class="card-body text-center">
+<p>You can park your car in front of our restaurant for free.</p>
+</div>
 
 <div class="contact" style="text-align: center;">
     <h5 style="padding-top: 10px; color: #000000; font-style:italic; font-size: 50px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; ;">
