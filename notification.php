@@ -10,7 +10,6 @@ include("./connect_db.php");
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <link rel="stylesheet" href="./css/notification.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -86,16 +85,21 @@ include("./connect_db.php");
   if (isset($_POST['submit'])) {
     $message = $_POST['message'];
     $type = $_POST['type'];
-    $query = "INSERT INTO `notifications` (`id`, `name`, `type`, `message`, `status`, `date`) VALUES (NULL, '', '$type', '$message', 'unread', CURRENT_TIMESTAMP)";
-    //   echo $query; exit();
-    if (performQuery($query)) {
-      header("location:notification.php");
+    if($message == NULL){
+      echo '<script>alert("Please choose a Tabel Number")</script>';
+    }else{
+        $query = "INSERT INTO `notifications` (`id`, `name`, `type`, `message`, `status`, `date`) VALUES (NULL, '', '$type', '$message', 'unread', CURRENT_TIMESTAMP)";
+        //  echo $query; exit();
+        if (performQuery($query)) {
+            echo '<script>alert("Your order has sent to Kitchen and Bar.")</script>';
+            // header("location:http://www.georgehollywood.com/index.php?content=notification");
+        }
     }
   }
 
   ?>
   <div class="container">
-    <div class="col-6" style="font-size: 2rem; ">
+    <div class="col-6" style="font-size: 2rem; border: 1px solid black; border-radius: 25px;">
       <form method="post">
         <div class="bestel-form">
           <label for="basic url" class="form-label">Type of Service</label><br>
@@ -106,12 +110,62 @@ include("./connect_db.php");
         </div>
         <br>
         <div class="bestel-form">
-          <label for="basic url" class="form-label">Order Detail</label>
-          <input name="message" class="form-control mr-sm-2" type="text" placeholder="Message" required>
-        </div>
-        <br>
-        <button name="submit" class="btn btn-outline-success my-2 my-sm-0 btn-lg" type="submit">Submit</button>
+          <label for="basic url" class="form-label">Tabel Number</label>
+          <input type="text" name="message"style="float: right;">
+          <!-- <select name="message" style="float: right;" id="message">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
 
+          </select> -->
+          
+          <hr>
+          <label for="">Eten Keuze #1</label>
+          <select name="eten1" id="eten" style="float: right;">
+          <option value="Sushi_t">Sushi Tonijn</option>
+          <option value="Seizoen_o">Seizoen Oesters</option>
+          <option value="Avacado_t">Avacado Toast</option>
+          </select>
+          <div>
+          <small for="">Aantal</small>
+          <select name="aantal1" style="float: right;" id="">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          </select>
+          </div>
+          <hr>
+          <label for="">Eten Keuze #2</label>
+          <select name="eten2" id="eten" style="float: right;">
+          <option value="Sushi_t">Sushi Tonijn</option>
+          <option value="Seizoen_o">Seizoen Oesters</option>
+          <option value="Avacado_t">Avacado Toast</option>
+          </select>
+          <div>
+          <small for="">Aantal</small>
+          <select name="aantal2" id="" style="float: right;">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          </select>
+          </div>
+
+          <hr>
+          <label for="">Dranken</label>
+          <select name="drink" id="drink" style="float: right;">
+          <option value="Verdejo">Verdejo</option>
+          <option value="Merlot">Merlot</option>
+          <option value="Aixrose">Aix Rose</option>
+          </select>
+        </div>
+        <hr>
+        <br>
+        <br>
+        <button name="submit" style="float: right;"  width="100" height="300" type="submit">Order</button>
+          <br>
+          <br>
       </form>
     </div>
 
